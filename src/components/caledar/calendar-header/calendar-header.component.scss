@@ -1,0 +1,26 @@
+:host {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  &-label {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    font-size: 22px;
+  }
+  .control {
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3a4965;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,32 @@
+:host {
+  width: calc(100% / 7.01);
+}
+
+.day {
+  width: 100%;
+  border: .3px solid #fff;
+  height: 140px;
+  background-color: transparent;
+  transition: background-color .2s ease-in;
+  cursor: pointer;
+  &:hover {
+    background-color: #49566D;
+  }
+  &-inner {
+    position: relative;
+    padding: 30px 5px 5px 5px;
+  }
+  &__number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  &_other_month {
+    opacity: .3;
+  }
+  &-events {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+
+
+
+<div class="calendar">
+  <app-calendar-header
+    [currentMonth]="currentMonth$ | async"
+    (changeMonth)="changeMonth($event)"
+  ></app-calendar-header>
+  <div class="calendar-inner">
+    <ng-container *ngFor="let day of week">
+      <div class="week-name">{{day}}</div>
+    </ng-container>
+  </div>
+  <div class="calendar-inner">
+    <ng-container *ngFor="let day of currentDays$ | async">
+      <app-day [day]="day"></app-day>
+    </ng-container>
+  </div>
+</div>

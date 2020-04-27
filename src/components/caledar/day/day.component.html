@@ -1,0 +1,11 @@
+<div class="day" [ngClass]="{'day_other_month': day.fromOtherMonth}">
+  <div class="day-inner">
+    <span class="day__number">{{day.fullDate | date: 'dd'}}</span>
+    <div class="day-events">
+      <app-event
+        *ngFor="let item of day.events"
+        [event]="item"
+      ></app-event>
+    </div>
+  </div>
+</div>
